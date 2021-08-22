@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap Integration -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+
+    <!-- Fontawesome Integration -->
+    <script src="https://kit.fontawesome.com/cfa7d17f5f.js" crossorigin="anonymous"></script>
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <title>User Login/Registration</title>
+</head>
+
+<body class="bg-light bg-gradient">
+    <div class="container">
+        <div class="row py-3 justify-content-center">
+            <div class="col">
+                <ul class="nav nav-tabs" id="my-tabs" role="tablist">
+                    <li class="nav-item">
+                        <a class="nav-link active" id="login-tab" data-toggle="tab" href="#login" role="tab"
+                            aria-controls="login" aria-selected="true">Log-in</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="register-tab" data-toggle="tab" href="#register" role="tab"
+                            aria-controls="register" aria-selected="false">Sign-up</a>
+                    </li>
+                </ul>
+
+                <!-- Login Form -->
+                <div class="tab-content py-4" id="my-tabs-content">
+                    <div class="tab-pane fade show active" id="login" role="tabpanel" aria-labelledby="login-tab">
+                        <div class="shadow p-3 mb-5 bg-white rounded">
+                            <form action="">
+                                <div class="input-group mb-3">
+                                    <span class="input-group-text"><i aria-hidden="true" class="fas fa-at"></i></span>
+                                    <input type="email" name="" id="" class="form-control" placeholder="Email" required>
+                                </div>
+                                <div class="input-group mb-3">
+                                    <span class="input-group-text"><i aria-hidden="true" class="fa fa-lock"></i></span>
+                                    <input type="password" name="" id="" class="form-control" placeholder="Password"
+                                        required>
+                                </div>
+                                <div class="row py-2">
+                                    <div class="form-check col remember-me">
+                                        <input class="form-check-input" type="checkbox" value="" id="remember-me">
+                                        <label class="form-check-label" for="remember-me">Remember me</label>
+                                    </div>
+                                    <div class="col" id="pw-reset">
+                                        <p>Forget <a href="#">Password&emsp;</a></p>
+                                    </div>
+                                </div>
+                                <div class="py-4 move-right">
+                                    <input class="btn btn-primary" type="submit" value="Login" />
+                                    <span> &nbsp; </span>
+                                    <input class="btn btn-primary" type="reset" value="Cancel" />
+                                </div>
+                            </form>
+                            <hr>
+                            <div>
+                                <p>Are you new, register <a href="#register">here</a></p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Registration Form -->
+                    <div class="tab-pane fade py-4" id="register" role="tabpanel" aria-labelledby="register-tab">
+                        <div class="shadow p-3 mb-5 bg-white rounded">
+                            <form action="">
+                                <div class="row">
+                                    <div class="input-group mb-3 col">
+                                        <span class="input-group-text"><i aria-hidden="true"
+                                                class="fa fa-user"></i></span>
+                                        <input type="text" name="" id="" class="form-control" placeholder="First Name"
+                                            required>
+                                    </div>
+                                    <div class="input-group mb-3 col">
+                                        <span class="input-group-text"><i aria-hidden="true"
+                                                class="fa fa-user"></i></span>
+                                        <input type="text" name="" id="" class="form-control" placeholder="Last Name"
+                                            required>
+                                    </div>
+                                </div>
+                                <div class="input-group mb-3">
+                                    <span class="input-group-text"><i aria-hidden="true"
+                                            class="fas fa-venus-mars"></i></span>
+                                    <div class="align-middle radio-btn">
+                                        <input type="radio" value="male" name="gender" id="male">
+                                        <label for="male">Male</label>
+                                        <input type="radio" value="female" name="gender" id="male">
+                                        <label for="female">Female</label>
+                                    </div>
+                                </div>
+                                <div class="input-group mb-3">
+                                    <span class="input-group-text"><i aria-hidden="true" class="fas fa-at"></i></span>
+                                    <input type="email" name="" id="" class="form-control" placeholder="Email" required>
+                                </div>
+                                <div class="input-group mb-3">
+                                    <span class="input-group-text"><i aria-hidden="true" class="fa fa-lock"></i></span>
+                                    <input type="password" name="" id="" class="form-control" placeholder="Password"
+                                        required>
+                                </div>
+                                <div class="input-group mb-3">
+                                    <span class="input-group-text"><i aria-hidden="true" class="fa fa-lock"></i></span>
+                                    <input type="password" name="" id="" class="form-control"
+                                        placeholder="Re-type Password" required>
+                                </div>
+                                <hr>
+                                <div class="row">
+                                    <div class="input-group mb-3 col">
+                                        <span class="input-group-text"><i aria-hidden="true"
+                                                class="fas fa-user-tag"></i></span>
+                                        <select id="working-role" name="working-role" class="custom-select">
+                                            <option value="">Working Role</option>
+                                            <option value="">Developer</option>
+                                            <option value="">Tester</option>
+                                            <option value="">Manager</option>
+                                            <option value="">Analyst</option>
+                                        </select>
+                                    </div>
+                                    <div class="input-group mb-3 col">
+                                        <span class="input-group-text"><i aria-hidden="true"
+                                                class="fas fa-user-tag"></i></span>
+                                        <select id="special-role" name="working-role" class="custom-select">
+                                            <option value="">Special Role</option>
+                                            <option value="">Admin</option>
+                                            <option value="">Back Admin</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="input-group mb-3 col">
+                                        <span class="input-group-text"><i aria-hidden="true"
+                                                class="fas fa-tasks"></i></span>
+                                        <select id="job-nataure" name="job-nataure" class="custom-select">
+                                            <option value="">Job nature?</option>
+                                            <option value="">Full time</option>
+                                            <option value="">Part time</option>
+                                            <option value="">Hourly basis</option>
+                                        </select>
+                                    </div>
+                                    <div class="input-group mb-3 col">
+                                        <span class="input-group-text"><i aria-hidden="true"
+                                                class="fas fa-user-friends"></i></span>
+                                        <select id="team" name="team" class="custom-select">
+                                            <option value="">Team</option>
+                                            <option value="">Team 1</option>
+                                            <option value="">Team 2</option>
+                                            <option value="">Team 3</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="input-group mb-3 col">
+                                        <span class="input-group-text"><i aria-hidden="true"
+                                                class="fas fa-user-tie"></i></span>
+                                        <select id="manager" name="manager" class="custom-select">
+                                            <option value="">Manager (Reporting to person)</option>
+                                            <option value="">Manager Name 1</option>
+                                            <option value="">Manager Name 2</option>
+                                            <option value="">Manager Name 3</option>
+                                        </select>
+                                    </div>
+                                    <div class="input-group mb-3 col">
+                                        <span class="input-group-text"><i aria-hidden="true"
+                                                class="fas fa-user-ninja"></i></span>
+                                        <select id="backup-person" name="backup-person" class="custom-select">
+                                            <option value="">Who is your backup person?</option>
+                                            <option value="">Backup Person Name 1</option>
+                                            <option value="">Backup Person Name 2</option>
+                                            <option value="">Backup Person Name 3</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="input-group mb-3 col">
+                                        <span class="input-group-text"><i aria-hidden="true"
+                                                class="far fa-calendar-alt"></i></span>
+                                        <input type="date" name="" id="" class="form-control" placeholder="Joining Date"
+                                            required>
+                                    </div>
+                                    <div class="input-group mb-3 col">
+                                        <span class="input-group-text"><i aria-hidden="true"
+                                                class="far fa-calendar-alt"></i></span>
+                                        <input type="date" name="" id="" class="form-control" placeholder="Leaving Date"
+                                            required>
+                                    </div>
+                                </div>
+                                <div class="input-group mb-3">
+                                    <span class="input-group-text"><i aria-hidden="true" class="far fa-flag"></i></span>
+                                    <select id="country-list" name="countries-list" class="custom-select">
+                                        <option value="">Select your country</option>
+                                        <option value="">Pakistan</option>
+                                        <option value="">Afghanistan</option>
+                                        <option value="">Iran</option>
+                                    </select>
+                                </div>
+                                <div class="py-2 move-right">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value=""
+                                            id="terms-and-conditions">
+                                        <label class="form-check-label" for="terms-and-conditions">I agree with
+                                            terms
+                                            and
+                                            conditions.</label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="news-letter">
+                                        <label class="form-check-label" for="news-letter">I want to receive the
+                                            newsletter.</label>
+                                    </div>
+                                </div>
+                                <div class="py-4 move-right">
+                                    <input class="btn btn-primary" type="submit" value="Register" />
+                                    <span> &nbsp; </span>
+                                    <input class="btn btn-primary" type="reset" value="Cancel" />
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
